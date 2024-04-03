@@ -2,14 +2,14 @@ import React from "react";
 
 export const Navbar = () => {
     return (
-        <div id="navbar" className="bg-gray-300 p-5 flex items-center flex-col sm:justify-between">
+        <div id="navbar" className="p-5 flex items-center flex-col sm:flex-row sm:justify-between md:flex-row md:justify-between lg:flex-row lg:justify-between xl:flex-row xl:justify-between">
             <div id="left-side" className="flex items-center">
                 <img src="src/assets/letter-b-svg.svg" className="size-10" alt="logo-svg" />
                 <span className="ml-5 text-3xl font-bold">
                     Project Dashboard
                 </span>
             </div>
-            <div id="right-side" className="">
+            <div id="right-side" className="flex flex-col sm:flex-row">
                 <div className="group">
                     <svg viewBox="0 0 24 24" aria-hidden="true" className="search-icon">
                         <g>
@@ -18,8 +18,9 @@ export const Navbar = () => {
                     </svg>
                     <input id="query" className="input" type="search" placeholder="Search my storyboards" name="searchbar" />
                 </div>
+                <button id="nb-btn" className="m-3 bg-blue-300 bg-opacity-40 p-3 rounded-md font-bold">Quick Start</button>
+                <img src="src/assets/letter-a-svg.svg" className="w-12 h-auto" />
             </div>
-
         </div>
     );
 };
