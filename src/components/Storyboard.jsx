@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 
 export const Storyboard = () => {
 
-    const [showPopup2, setShowPopup2] = useState(true);
+    const [showPopup2, setShowPopup2] = useState(false);
 
     const handleStoryboardClick = () => {
         alert("Storyboard content")
@@ -34,24 +34,43 @@ export const Storyboard = () => {
                             </div>
                             {showPopup2 && (
                                 <div className="fixed top-0 left-0 w-full h-full flex justify-center items-center bg-black bg-opacity-50">
-                                    <div className="bg-white p-8 rounded shadow-lg">
-                                        <h1 className='mb-7 font-bold text-3xl text-black'>New Storyboard</h1>
+                                    <div className="bg-white p-8 rounded-lg shadow-lg">
+                                        <div className='mb-7 flex flex-row justify-between items-center'>
+                                            <h1 className='font-bold text-3xl text-black'>New Storyboard</h1>
+                                            <svg xmlns="http://www.w3.org/2000/svg" onClick={togglePopup2} width="1em" height="1em" viewBox="0 0 15 15"><path fill="black" d="M3.64 2.27L7.5 6.13l3.84-3.84A.92.92 0 0 1 12 2a1 1 0 0 1 1 1a.9.9 0 0 1-.27.66L8.84 7.5l3.89 3.89A.9.9 0 0 1 13 12a1 1 0 0 1-1 1a.92.92 0 0 1-.69-.27L7.5 8.87l-3.85 3.85A.92.92 0 0 1 3 13a1 1 0 0 1-1-1a.9.9 0 0 1 .27-.66L6.16 7.5L2.27 3.61A.9.9 0 0 1 2 3a1 1 0 0 1 1-1c.24.003.47.1.64.27" /></svg>
+                                        </div>
                                         <div className="grid grid-cols-6 gap-4 col-span-full lg:col-span-3 flex flex-col">
                                             <div className="col-span-full">
-                                                <label htmlFor="firstname" className="text-sm">First name</label>
-                                                <input id="firstname" type="text" placeholder="First name" className="p-3 border border-gray-300 w-full rounded-md focus:ring focus:ring-opacity-75 dark:text-gray-50 focus:dark:ring-violet-600 dark:border-gray-300" />
+                                                <label htmlFor="firstname" className="text-sm font-bold">Storyboard Name</label>
+                                                <input id="firstname" type="text" placeholder="e.g. Default Project Storyboard" className="p-3 border border-gray-300 w-full rounded-md focus:ring focus:ring-opacity-75" />
                                             </div>
-                                            <div className="col-span-full">
-                                                <label htmlFor="lastname" className="text-sm">Last name</label>
-                                                <input id="lastname" type="text" placeholder="Last name" className="p-3 border border-gray-300 w-full rounded-md focus:ring focus:ring-opacity-75 dark:text-gray-50 focus:dark:ring-violet-600 dark:border-gray-300" />
+                                            <div className="col-span-full relative">
+                                                <label htmlFor="frameSize" className="text-sm font-bold">Frame size</label>
+                                                <div className="relative">
+                                                    <select id="frameSize" className="p-3 border font-bold border-gray-300 w-full rounded-md focus:ring focus:ring-opacity-75">
+                                                        <option className='text-gray-500' value="landscape">Landscape (16:9)</option>
+                                                        <option className='text-gray-500' value="portrait">Portrait (16:9)</option>
+                                                    </select>
+                                                </div>
                                             </div>
                                         </div>
-                                        <button onClick={togglePopup2} className="mt-4 ml-3 bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">
-                                            Delete
-                                        </button>
+                                        <div className='flex flex-row justify-between items-center m-3'>
+                                            <label className="relative h-auto w-12 cursor-pointer [-webkit-tap-highlight-color:_transparent]" htmlFor="switch">
+                                                <input className="peer sr-only" id="switch" type="checkbox" />
+                                                <span className="absolute inset-0 m-auto h-2 rounded-full bg-stone-400" />
+                                                <span className="absolute inset-y-0 start-0 m-auto size-6 rounded-full bg-stone-600 transition-all peer-checked:start-6 peer-checked:[&_>_*]:scale-0">
+                                                    <span className="absolute inset-0 m-auto size-4 rounded-full bg-stone-300 transition">
+                                                    </span>
+                                                </span>
+                                            </label>
+                                            <button onClick={togglePopup2} className="bg-gray-300 hover:bg-gray-400 text-white font-bold py-2 px-4 rounded">
+                                                Create Storyboard
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
                             )}
+
                         </div>
                     </div>
                 </div>
