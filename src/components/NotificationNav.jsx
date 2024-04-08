@@ -3,7 +3,7 @@ import React from "react";
 export const NotificationNav = () => {
 
   const offerBtn = () => {
-    alert("hello");
+    alert("Discount is yours. :>");
   }
 
   return (
