@@ -19,7 +19,7 @@ export const Storyboard = () => {
                     <div className="flex flex-wrap -m-4">
                         <div className="p-4 md:w-1/3 cursor-pointer">
                             <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden transition-transform transform hover:scale-105 hover:shadow-lg" onClick={handleStoryboardClick}>
-                                <img className="lg:h-80 md:h-36 w-full object-cover object-center" src="src/assets/storyboard-bg.jpg" alt="blog" />
+                                <img className="lg:h-80 md:h-36 w-full object-cover object-center" src="storyboard-bg.jpg" alt="blog" />
                                 <div className="p-3">
                                     <h1 className="title-font text-lg font-medium text-gray-900 mb-1">AI Character Demo Storyboard</h1>
                                     <div className="flex items-center flex-wrap ">

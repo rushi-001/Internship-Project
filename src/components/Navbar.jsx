@@ -15,7 +15,7 @@ export const Navbar = () => {
     return (
         <div id="navbar" className="p-5 flex items-center flex-col sm:flex-row sm:justify-between md:flex-row md:justify-between lg:flex-row lg:justify-between xl:flex-row xl:justify-between">
             <div id="left-side" className="flex items-center">
-                <img src="src/assets/letter-b-svg.svg" className="size-10" alt="logo-svg" />
+                <img src="letter-b-svg.svg" className="size-10" alt="logo-svg" />
                 <span className="ml-5 text-3xl font-bold">
                     Project Dashboard
                 </span>
@@ -32,7 +32,7 @@ export const Navbar = () => {
                     </form>
                 </div>
                 <button id="nb-btn" onClick={handleClick} className="flex flex-row items-center justify-center m-3 bg-blue-200 hover:bg-blue-100 border border-blue-300 bg-opacity-40 pl-3 pr-3 rounded-md font-bold"><svg className="m-1 flex items-center justify-center" xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24"><path fill="skyblue" d="M10.14,1.16a11,11,0,0,0-9,8.92A1.59,1.59,0,0,0,2.46,12,1.52,1.52,0,0,0,4.11,10.7a8,8,0,0,1,6.66-6.61A1.42,1.42,0,0,0,12,2.69h0A1.57,1.57,0,0,0,10.14,1.16Z"><animateTransform attributeName="transform" dur="0.75s" repeatCount="indefinite" type="rotate" values="0 12 12;360 12 12" /></path><text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" font-size="12" fill="black">4</text></svg> Quick Start</button>
-                <img src="src/assets/letter-a-svg.svg" className="w-12 h-auto hidden md:flex" />
+                <img src="letter-a-svg.svg" className="w-12 h-auto hidden md:flex" />
                 <div className="mt-3 m-3 h-12 w-10 bg-black text-black rounded-s-full flex items-center justify-center hidden md:flex">
                     <svg className="size-5" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 256 256"><path fill="white" d="M219.71 117.38a12 12 0 0 0-7.25-8.52l-51.18-20.47l10.59-70.61a12 12 0 0 0-20.64-10l-112 120a12 12 0 0 0 4.31 19.33l51.18 20.47l-10.59 70.64a12 12 0 0 0 20.64 10l112-120a12 12 0 0 0 2.94-10.84M113.6 203.55l6.27-41.77a12 12 0 0 0-7.41-12.92l-43.72-17.49l73.66-78.92l-6.27 41.77a12 12 0 0 0 7.41 12.92l43.72 17.49Z" /></svg>
                 </div>

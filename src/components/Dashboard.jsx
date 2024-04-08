@@ -25,7 +25,7 @@ export const Dashboard = () => {
       <div id='new-project' className='bg-white rounded-md ml-10 mr-10'>
         <div className='flex justify-between'>
           <div id='title' className='p-10 flex flex-row'>
-            <img className='w-10 h-auto mr-3' src='src/assets/folder-svg.svg' />
+            <img className='w-10 h-auto mr-3' src='folder-svg.svg' />
             <div className='flex flex-col'>
               <h1 className='font-bold'>Default Project</h1>
               <h3 className='font-semibold text-gray-400'>1 storyboard</h3>
