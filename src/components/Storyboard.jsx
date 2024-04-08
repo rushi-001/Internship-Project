@@ -54,15 +54,18 @@ export const Storyboard = () => {
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className='flex flex-row justify-between items-center m-3'>
-                                            <label className="relative h-auto w-12 cursor-pointer [-webkit-tap-highlight-color:_transparent]" htmlFor="switch">
-                                                <input className="peer sr-only" id="switch" type="checkbox" />
-                                                <span className="absolute inset-0 m-auto h-2 rounded-full bg-stone-400" />
-                                                <span className="absolute inset-y-0 start-0 m-auto size-6 rounded-full bg-stone-600 transition-all peer-checked:start-6 peer-checked:[&_>_*]:scale-0">
-                                                    <span className="absolute inset-0 m-auto size-4 rounded-full bg-stone-300 transition">
+                                        <div className='flex flex-row justify-between items-center m-3 mt-5'>
+                                            <div className='flex flex-row mr-16'>
+                                                <label className="relative h-auto w-12 cursor-pointer [-webkit-tap-highlight-color:_transparent]" htmlFor="switch">
+                                                    <input className="peer sr-only" id="switch" type="checkbox" />
+                                                    <span className="absolute inset-0 m-auto h-2 rounded-full bg-stone-400" />
+                                                    <span className="absolute inset-y-0 start-0 m-auto size-6 rounded-full bg-stone-600 transition-all peer-checked:start-6 peer-checked:[&_>_*]:scale-0">
+                                                        <span className="absolute inset-0 m-auto size-4 rounded-full bg-stone-300 transition">
+                                                        </span>
                                                     </span>
-                                                </span>
-                                            </label>
+                                                </label>
+                                                <h3 className='m-3 font-bold text-md'>AI Assistant</h3>
+                                            </div>
                                             <button onClick={togglePopup2} className="bg-gray-300 hover:bg-gray-400 text-white font-bold py-2 px-4 rounded">
                                                 Create Storyboard
                                             </button>
